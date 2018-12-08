@@ -3,7 +3,7 @@ class CircularPrimeNumber{
 
 	public static void main(String[] args){
 		Scanner scn = new Scanner(System.in);
-		System.out.println("Enter number to Check Number is circular prime Or not");
+		System.out.println("Enter Number to Check Circular prime Or not");
 		int inputNum = scn.nextInt();
 		int mul = 1;
 		int temp = inputNum;
@@ -35,7 +35,7 @@ class CircularPrimeNumber{
 		return true;
 	}
 	/*
-	I/O : Enter number to Check Number is circular prime Or not 
+	I/O : Enter Number to Check Circular prime Or not 
 		1193
 		1193 is a prime number
 		3119 is a prime number

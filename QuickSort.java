@@ -7,7 +7,7 @@ public class QuickSort{
 		System.out.println("ipArrays After Quick Sort");
 		System.out.println(java.util.ipArrays.toString(ipArray));
 	}
-	public static void quickSort(int[] ipArray,int startIndex, int endIndex){
+	private static void quickSort(int[] ipArray,int startIndex, int endIndex){
 		if(startIndex<endIndex){
 			int partitionIndex = performPartition(ipArray,startIndex,endIndex);
 			quickSort(ipArray,startIndex,partitionIndex-1);
@@ -16,7 +16,7 @@ public class QuickSort{
 	}
 	// makes sure that the elements left to partitionIndex is lessthan the element at partitionIndex
 	// and elements right to partitionIndex is greaterthan the element at partitionIndex
-	public static int performPartition(int[] ipArray,int startIndex,int endIndex){
+	private static int performPartition(int[] ipArray,int startIndex,int endIndex){
 		int pivot = ipArray[endIndex];
 		int partitionIndex = startIndex;
 		for(int i=startIndex;i<endIndex;i++){
